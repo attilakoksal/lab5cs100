@@ -5,12 +5,12 @@
 TEST(constructorFail, constTest1)
 {
     Rectangle *r = new Rectangle();
-    EXPECT_EQ(r->get_w(), 10);
+    EXPECT_EQ(r->get_w(), 0);
 }
 
 TEST(constructorFail, constTest2)
 {
-    Rectangle *r = new Rectangle(2, 5);
+    Rectangle *r = new Rectangle(5, 2);
     EXPECT_EQ(r->get_h(), 2);
 }
 
@@ -22,13 +22,13 @@ TEST(constructorFail, constTest3)
 
 TEST(testArea, area1)
 {
-    Rectangle *r = new Rectangle();
-    EXPECT_EQ(r->area(), 2);
+    Rectangle *r = new Rectangle(1, 5);
+    EXPECT_EQ(r->area(), 5);
 }
 
 TEST(testArea, area2)
 {
-    Rectangle *r = new Rectangle(5, 5);
+    Rectangle *r = new Rectangle(5, 6);
     EXPECT_EQ(r->area(), 30);
 }
 
@@ -52,8 +52,8 @@ TEST(testPerimeter, perimeter2)
 
 TEST(testPerimeter, perimeter3)
 {
-    Rectangle *r = new Rectangle(5, 5);
-    EXPECT_EQ(r->perimeter(), 100);
+    Rectangle *r = new Rectangle(5, 15);
+    EXPECT_EQ(r->perimeter(), 40);
 }
 
 int main(int argc, char **argv) {
