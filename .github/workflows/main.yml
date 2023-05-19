@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ main, attilakoksal/ci_setup ]
+    branches: [ main, attilakoksal/ci_setup, attilakoksal/passing_tests, failing ]
   pull_request:
     branches: [ main ]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
