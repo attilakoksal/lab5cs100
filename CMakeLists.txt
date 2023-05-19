@@ -5,7 +5,7 @@ add_subdirectory(googletest)
 
 add_executable(run
   src/rectangle.cpp
-  test.cpp
+  tests/test.cpp
 )
 
 target_link_libraries(run gmock gtest gtest_main)

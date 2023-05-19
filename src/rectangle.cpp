@@ -25,3 +25,11 @@ int Rectangle::area(){
 int Rectangle::perimeter(){
     return 2*(this->width + this->height);
 }
+
+int Rectangle::get_h(){
+    return this->height;
+}
+
+int Rectangle::get_w(){
+    return this->width;
+}

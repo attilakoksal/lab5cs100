@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "header/rectangle.hpp"
+#include "../header/rectangle.hpp"
 #include <cmath>
 
 TEST(constructorFail, constTest1)
